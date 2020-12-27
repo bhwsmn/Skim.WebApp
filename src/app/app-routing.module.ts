@@ -6,7 +6,7 @@ import { ShortLinkResolverComponent } from './common/components/short-link-resol
 const routes: Routes = [
   {path: '', component: ShortLinkCreatorComponent},
   {path: ':shortSlug', component: ShortLinkResolverComponent},
-  {path: '**', component: ShortLinkCreatorComponent},
+  {path: '**', redirectTo: '/'},
 ];
 
 @NgModule({
